@@ -14,7 +14,7 @@ func init() {
 
 var redisCmd = &cobra.Command{
 	Use:   "redis",
-	Short: "net-tools redis",
+	Short: "Simulating a redis client connection to redis",
 	Long:  "net-tools redis 123456",
 	Run: func(cmd *cobra.Command, args []string) {
 		if len(args) != 1 {

@@ -14,6 +14,6 @@ var versionCmd = &cobra.Command{
 	Short: "net-tools version",
 	Long:  "get net-tools version",
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("net-tools v2.0 ")
+		fmt.Println("net-tools v2.2 ")
 	},
 }

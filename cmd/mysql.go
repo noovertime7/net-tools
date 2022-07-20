@@ -14,11 +14,11 @@ func init() {
 
 var mysqlCmd = &cobra.Command{
 	Use:   "mysql",
-	Short: "net-tools mysql",
-	Long:  "net-tools mysql -u root -p 123456",
+	Short: "Simulate a mysql client to connect to the database",
+	Long:  "net-tools mysql 127.0.0.1:3306 -u root -p 123456",
 	Run: func(cmd *cobra.Command, args []string) {
 		if len(args) != 1 {
-			log.Fatalln("You have entered the wrong parameter, Usage: ./net-tools mysql -u root -p 123456")
+			log.Fatalln("You have entered the wrong parameter, Usage: ./net-tools mysql 127.0.0.1:3306 -u root -p 123456")
 		}
 		username, err := cmd.Flags().GetString("username")
 		if err != nil {

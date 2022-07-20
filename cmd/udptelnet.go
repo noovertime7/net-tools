@@ -16,7 +16,7 @@ func init() {
 
 var UdptelnetCmd = &cobra.Command{
 	Use:   "udptelnet",
-	Short: "net-tools udp telnet",
+	Short: "Please use udpsend instead of this function",
 	Long:  "Usage: ./net-tools udptelnet 127.0.0.1 3306",
 	Run: func(cmd *cobra.Command, args []string) {
 		if len(args) != 2 {

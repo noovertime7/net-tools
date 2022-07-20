@@ -14,8 +14,8 @@ func init() {
 
 var curlCmd = &cobra.Command{
 	Use:   "curl",
-	Short: "net-tools curl",
-	Long:  "Usage: ./net-tools curl -X POST http://127.0.0.1:8080 -d {}",
+	Short: "Simulate curl command to send http data to host, support get post",
+	Long:  "Usage: ./net-tools curl -X POST http://127.0.0.1:8080 -d msg",
 	Run: func(cmd *cobra.Command, args []string) {
 		if len(args) != 1 {
 			log.Fatalln("You have entered the wrong parameter, Usage: . /net-tools curl https://www.baidu.com")

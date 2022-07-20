@@ -15,7 +15,7 @@ func init() {
 
 var telnetCmd = &cobra.Command{
 	Use:   "telnet",
-	Short: "net-tools telnet",
+	Short: "Simulate the telnet command to detect the port of the target host",
 	Long:  "Usage: ./net-tools telnet 127.0.0.1 3306",
 	Run: func(cmd *cobra.Command, args []string) {
 		if len(args) != 2 {
