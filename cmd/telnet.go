@@ -34,5 +34,6 @@ var telnetCmd = &cobra.Command{
 		if err := core.TelnetCheck(fmt.Sprintf("%v:%v", host, port), timeout); err != nil {
 			log.Fatalln(err)
 		}
+		log.Printf("telnet %s connection successful", host)
 	},
 }
