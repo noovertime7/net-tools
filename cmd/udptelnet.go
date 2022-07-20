@@ -11,6 +11,7 @@ import (
 
 func init() {
 	rootCmd.AddCommand(UdptelnetCmd)
+	UdptelnetCmd.Flags().IntP("timeout", "t", 5, "-- timeout")
 }
 
 var UdptelnetCmd = &cobra.Command{
