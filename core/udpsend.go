@@ -12,10 +12,10 @@ func UdpSendMsg(addr, msg string, times int) error {
 		return err
 	}
 	socket, err := net.DialUDP("udp", nil, udpaddr)
-	defer socket.Close()
 	if err != nil {
 		return err
 	}
+	defer socket.Close()
 	for i := 0; i < times; i++ {
 		log.Printf("Send msg : %s", msg)
 		_, err = socket.Write([]byte(msg + "\n"))
