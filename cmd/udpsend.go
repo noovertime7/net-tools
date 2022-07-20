@@ -19,7 +19,7 @@ func init() {
 var UdpSendCmd = &cobra.Command{
 	Use:   "udpsend",
 	Short: "Send udp messages to the specified host continuously",
-	Long:  "Usage: ./net-tools udptelnet 127.0.0.1 19006 -t 100 -m HelloNet-tools!",
+	Long:  "Usage: ./net-tools udpsend 127.0.0.1 19006 -t 100 -m HelloNet-tools!",
 	Run: func(cmd *cobra.Command, args []string) {
 		if len(args) != 2 {
 			log.Fatalln("You have entered the wrong parameter, Usage: ./net-tools-2.1 udpsend 127.0.0.1 19006 -c 100 -m conent ")
